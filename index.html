@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="imgs/fotoperfil.png" alt="Foto Byte Code">
+            <h1>@byte_code_</h1>
+            <p>A nossa comunidade.</p>
+        </header>
+
+        <section class="botoes-links">
+            <a href="https://discord.gg/4JrbvGbhvk" target="_blank" class="link">
+                <button>
+                    <span>Discord</span>
+                    <i class="bi bi-discord"></i>
+                </button>
+            </a>
+            <a href="https://github.com/Vtzinbld" target="_blank" class="link">
+                <button>
+                    <span>Github</span>
+                    <i class="bi bi-github"></i>
+                </button>
+            </a>
+            <a class="link">
+                <button id="botaoPix">
+                    <span>Clique para copiar o Pix </span>
+                    <i class="bi bi-currency-dollar"></i>
+                </button>
+            </a>
+        </section>
+        
+        <footer>
+            <a href="" class="btn-footer" target="_blank"><i class="bi bi-discord"></i></a>
+            <a href="" class="btn-footer" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="" class="btn-footer" target="_blank"><i class="bi bi-currency-dollar"></i></a>
+        </footer>
+    </div>
+        <script>
+            document.getElementById("botaoPix").addEventListener("click", function() {
+                // Texto que você deseja copiar (número Pix)
+                var texto = "3f0afe12-1e48-4bcd-aa67-f134f3750b83";
+
+                // Criar um elemento de texto temporário
+                var tempInput = document.createElement("textarea");
+                tempInput.value = texto;
+
+                // Adicionar o elemento temporário à página
+                document.body.appendChild(tempInput);
+
+                // Selecionar todo o texto dentro do elemento temporário
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999); // Para dispositivos móveis
+
+                // Copiar o texto para a área de transferência
+                document.execCommand("copy");
+
+                // Remover o elemento temporário da página
+                document.body.removeChild(tempInput);
+
+                // Mostrar uma mensagem de confirmação
+                alert("Pix copiado com sucesso!");
+            });            
+        </script>
+</body>
+
+</html>
