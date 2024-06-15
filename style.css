@@ -11,13 +11,13 @@ html {
 }
 
 body {
-    background-color: #25262a;
+    background-color: #212121;
     height: 100%;
 }
 
 a {
     text-decoration: none;
-    color: #00f275;
+    color: #fff;
 }
 
 header {
@@ -31,11 +31,16 @@ header img {
     margin-bottom: 20px;
     border-radius: 100%;
 }
+header img:hover {
+    transform: scale(1.05);
+    transition: .3s;
+    box-shadow: 0px 1px 5px #fff;
+}
 
 header h1 {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #00f275;
+    color: #fff;
     font-weight: lighter;
 }
 
@@ -50,14 +55,14 @@ footer a.btn-footer {
     height: 60px;
     font-size: 2em;
     line-height: 60px;
-    background-color: #f2f4fb;
+    background-color: #fff;
     color: #25262a;
     border-radius: 50%;
     margin: 0 10px;
 }
 
 footer a.btn-footer:hover {
-    box-shadow: 0px 1px 3px #00f275;
+    box-shadow: 0px 1px 3px #fff;
     transform: scale(1.05);
     transition: .3s;
 }
@@ -70,7 +75,7 @@ footer a.btn-footer:hover {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    color: #f2f4fb;
+    color: #fff;
 }
 
 
@@ -90,14 +95,13 @@ a.link button {
     border-radius: 30px;
     font-size: 1.2em;
     cursor: pointer;
-    color: #25262a;
-    background-color: #f2f4fb;
+    color: #212121;
+    background-color: #fff;
     
 }
 
 a.link button:hover {
     transform: scale(1.05);
     transition: .3s;
-    box-shadow: 0px 1px 3px #00f275;
+    box-shadow: 0px 1px 3px #fff;
 }
-
